@@ -11,7 +11,7 @@ Thumbs.db
 .env.*
 !.env.example
 
-# SQL local/session scratch files (keep your main schema scripts tracked)
+# SQL local/session scratch files 
 *.session.sql
 *.tmp.sql
 
