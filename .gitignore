@@ -1,0 +1,25 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# VS Code local workspace settings
+.vscode/*
+!.vscode/extensions.json
+
+# Local environment files
+.env
+.env.*
+!.env.example
+
+# SQL local/session scratch files (keep your main schema scripts tracked)
+*.session.sql
+*.tmp.sql
+
+# Database dumps/backups
+*.sql.gz
+*.dump
+*.bak
+*.backup
+
+# Logs
+*.log
