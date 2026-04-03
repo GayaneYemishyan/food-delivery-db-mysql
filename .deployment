@@ -1,0 +1,6 @@
+# Custom startup configuration
+# Disable Oryx
+oryx.disable=true
+
+# Use custom startup script
+startup.script=startup.sh
