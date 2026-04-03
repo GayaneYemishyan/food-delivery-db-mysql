@@ -1,4 +1,4 @@
-Flask
-pyodbc
-python-dotenv
-flask-cors
+Flask==3.0.0
+flask-cors==4.0.0
+pyodbc==5.1.0
+python-dotenv==1.0.0
