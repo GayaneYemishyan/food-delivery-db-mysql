@@ -10,8 +10,6 @@ app = Flask(__name__, static_folder="public")
 CORS(app)
 
 # ── DB CONNECTION STRING ──────────────────────────────────────
-# Azure SQL uses ODBC Driver 18 for SQL Server
-# Note: Check if you have {ODBC Driver 18 for SQL Server} or {SQL Server} installed.
 def get_conn():
     # If using 'SQL Server' driver, you may need to adjust settings (e.g. Encrypt/TrustServerCertificate)
     driver = "{SQL Server}" 
