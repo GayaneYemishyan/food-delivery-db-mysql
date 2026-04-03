@@ -1,16 +1,3 @@
-# ================================================================
-# Food Delivery - Python Flask Backend
-# Azure SQL Database compatible (replaces server.js)
-#
-# REQUIREMENTS:
-#   pip install flask flask-cors pyodbc python-dotenv
-#
-# SETUP:
-#   1. Copy .env.example to .env and fill in your Azure SQL details
-#   2. Run:  python server.py
-#   3. Open: http://localhost:3000
-# ================================================================
-
 from flask import Flask, jsonify, request, send_from_directory
 from flask_cors import CORS
 import pyodbc
