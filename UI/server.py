@@ -285,5 +285,5 @@ def feedback():
 # ── START ─────────────────────────────────────────────────────
 if __name__ == "__main__":
     port = int(os.getenv("SERVER_PORT", 5000))
-    print(f"\n✅  Server running at http://localhost:{port}\n")
+    print("\n✅  Server running at https://food-delivery-app-dcd4c7h2c8hecrcm.germanywestcentral-01.azurewebsites.net/\n")
     app.run(host="0.0.0.0", port=port, debug=True)
