@@ -2574,7 +2574,7 @@ select option{background:var(--white)}
 
 <script>
 // ── CONFIG ────────────────────────────────────────────────
-const API = 'https://food-delivery-app-dcd4c7h2c8hecrcm.germanywestcentral-01.azurewebsites.net/api';  // production API
+const API = window.location.origin; // works in both local and prod
 
 // ── PHOTO MAP (Unsplash per restaurant name keyword) ──────
 const REST_IMGS = {
