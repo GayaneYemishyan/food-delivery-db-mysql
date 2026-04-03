@@ -11,19 +11,19 @@ CORS(app)
 
 # ── DB CONNECTION STRING ──────────────────────────────────────
 def get_conn():
-    # If using 'SQL Server' driver, you may need to adjust settings (e.g. Encrypt/TrustServerCertificate)
-    driver = "{SQL Server}" 
+    driver = "{ODBC Driver 18 for SQL Server}" 
+    
     conn_str = (
         f"DRIVER={driver};"
-        f"SERVER={os.getenv('DB_HOST')};"        # e.g. yourserver.database.windows.net
+        f"SERVER={os.getenv('DB_HOST')};"
         f"DATABASE={os.getenv('DB_NAME', 'FoodDeliveryDB')};"
         f"UID={os.getenv('DB_USER')};"
         f"PWD={os.getenv('DB_PASSWORD')};"
-        # Azure SQL usually requires Encryption. The 'SQL Server' driver handles it differently sometimes.
+        "Encrypt=yes;" # Added for Azure SQL security
+        "TrustServerCertificate=no;" # Added for Azure SQL security
+        "Connection Timeout=30;"
     )
     return pyodbc.connect(conn_str)
-
-
 def rows_to_dict(cursor):
     """Convert pyodbc rows to a list of dicts using column names."""
     columns = [col[0] for col in cursor.description]

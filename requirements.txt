@@ -1,5 +1,5 @@
-flask
-flask-cors
+Flask
+Flask-CORS
 pyodbc
 python-dotenv
-
+gunicorn
